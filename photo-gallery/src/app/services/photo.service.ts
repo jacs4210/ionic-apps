@@ -45,7 +45,7 @@ export class PhotoService {
                         delete photoCopy.base64;
 
                         return photoCopy;
-                    }));
+                    }))
         });
     }
 
@@ -140,7 +140,7 @@ export class PhotoService {
             for (let photo of this.photos) {
             // Read each saved photo's data from the Filesystem
             const readFile = await Filesystem.readFile({
-                path: photo.filepath,
+                path: photo.filePath,
                 directory: FilesystemDirectory.Data
             });
 
